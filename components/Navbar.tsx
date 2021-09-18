@@ -3,6 +3,9 @@ import Link from "next/link";
 import Button from "./headless/Button";
 import {FiMenu, FiX} from "react-icons/fi";
 import {useState} from "react";
+import {allSchools} from "../pages";
+import getSchoolName from "../utils/getSchoolName";
+import H3 from "./headless/H3";
 
 export default function Navbar() {
     const router = useRouter();
@@ -26,7 +29,7 @@ export default function Navbar() {
                     <img src="/tsl-logo.svg" alt="TSL Logo" className="h-5 sm:hidden"/>
                 </a>
                 <Link href="/about">
-                    <a className="ml-auto hidden sm:block">About</a>
+                    <a className="ml-auto hidden sm:block text-gray-500">About</a>
                 </Link>
                 <Link href="/">
                     <a
@@ -34,18 +37,23 @@ export default function Navbar() {
                         style={{transform: "translateX(-50%)"}}
                     >5C COVID Dashboard</a>
                 </Link>
-                <Button containerClassName="ml-auto" onClick={() => setMenuOpen(!menuOpen)}>
+                <Button containerClassName="ml-auto sm:hidden" onClick={() => setMenuOpen(!menuOpen)}>
                     <FiMenu/>
                 </Button>
-                <div className="fixed h-full w-72 top-0 right-0 transition-all bg-white shadow-md flex flex-col items-end justify-center p-4 z-30" style={{marginRight: menuOpen ? "0" : "-100%"}}>
-                    <div className="absolute top-4 right-4">
+                <div className="fixed h-full w-72 top-0 right-0 transition-all bg-white shadow-md flex flex-col items-end justify-center p-6 z-30" style={{marginRight: menuOpen ? "0" : "-100%"}}>
+                    <div className="absolute top-6 right-6">
                         <Button onClick={() => setMenuOpen(false)}>
                             <FiX/>
                         </Button>
                     </div>
+                    <H3 className="mb-2">By school</H3>
+                    {allSchools.map(d => (
+                        <Button containerClassName="py-2 text-xl text-right" href={`/${d}`}>{getSchoolName(d)}</Button>
+                    ))}
+                    <H3 className="mt-8 mb-2">Other info</H3>
                     <Button containerClassName="py-2 text-xl" href="About">About this dashboard</Button>
-                    <Button containerClassName="py-2 text-xl" href="About">The Student Life home</Button>
-                    <p className="absolute bottom-4 right-4 text-gray-500 text-sm">
+                    <Button containerClassName="py-2 text-xl" href="https://tsl.news">The Student Life home</Button>
+                    <p className="absolute bottom-6 right-6 text-gray-500 text-sm">
                         Developed by Samson Zhang
                     </p>
                 </div>
