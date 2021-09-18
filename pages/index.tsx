@@ -107,6 +107,9 @@ export default function Home() {
                         }
                     </div>
                 </div>
+                <hr className="my-12"/>
+                <H3>Data sourcing</H3>
+                <p className="mt-2">The data in this portal is aggregated from data published by each of the 5C schools.</p>
             </div>
             <div className="ml-auto w-80 pl-4 border-l box-content flex-shrink-0">
                 <H3>Data by school</H3>
