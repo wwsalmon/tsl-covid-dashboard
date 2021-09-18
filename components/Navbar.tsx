@@ -1,9 +1,7 @@
-import {useSession} from "next-auth/client";
 import Container from "./headless/Container";
 import {useRouter} from "next/router";
 
 export default function Navbar() {
-    const [session, loading] = useSession();
     const router = useRouter();
 
     return (
