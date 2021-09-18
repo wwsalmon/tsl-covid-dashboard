@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.font-serif {
+    font-family: "Lora", serif;
+}
+
 .up-spinner {
     position: absolute;
     top: calc(50% - 0.5rem);
