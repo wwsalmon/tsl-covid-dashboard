@@ -23,9 +23,6 @@ export default function Home() {
     return (
         <Container width="5xl" className="my-16">
             <SEO/>
-            <H1>COVID at the 5Cs</H1>
-            <p className="text-gray-500 text-xl mt-2">Your one dashboard for COVID information at the five Claremont Colleges</p>
-            <hr className="my-12"/>
             <div className="flex">
                 <div className="flex-shrink-1 min-w-0 pr-8">
                     <MainStats currentDate={currentDate} setCurrentDate={setCurrentDate}/>

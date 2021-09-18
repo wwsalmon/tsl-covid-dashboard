@@ -32,7 +32,7 @@ export default function SchoolPage() {
                 <img src={`/logos/${school}.png`} style={{maxWidth: 64, maxHeight: 64}} className="mr-8"/>
                 <div>
                     <H1>COVID at {getSchoolName(school as schoolOpts)}</H1>
-                    <p className="text-gray-500 text-xl mt-2">Your one dashboard for COVID information at {getSchoolName(school as schoolOpts)}</p>
+                    <p className="text-gray-500 text-xl mt-2">Testing result information for {getSchoolName(school as schoolOpts)}</p>
                 </div>
             </div>
             <hr className="my-12"/>
