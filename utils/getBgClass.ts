@@ -6,6 +6,7 @@ const getBgClass = (school: schoolOpts) => ({
     cmc: "bg-cmc",
     pitzer: "bg-pitzer",
     scripps: "bg-scripps",
+    all: "bg-tsl",
 }[school]);
 
 export default getBgClass;
