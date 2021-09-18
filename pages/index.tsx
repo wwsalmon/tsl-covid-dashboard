@@ -23,11 +23,12 @@ export default function Home() {
     return (
         <Container width="5xl" className="my-16">
             <SEO/>
-            <div className="flex">
-                <div className="flex-shrink-1 min-w-0 pr-8">
+            <div className="sm:flex">
+                <div className="flex-shrink-1 min-w-0 sm:pr-8">
                     <MainStats currentDate={currentDate} setCurrentDate={setCurrentDate}/>
                 </div>
-                <div className="ml-auto w-80 pl-4 border-l box-content flex-shrink-0">
+                <div className="ml-auto sm:w-80 sm:pl-4 sm:border-l box-content flex-shrink-0">
+                    <hr className="my-12 sm:hidden"/>
                     <H3>Data by school</H3>
                     <p className="text-gray-500 mb-8">Click on a school for details</p>
                     <div className="flex items-center py-3 px-4 rounded">

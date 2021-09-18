@@ -28,8 +28,8 @@ export default function SchoolPage() {
                 <FiArrowLeft/>
                 <span className="ml-2">All 5Cs</span>
             </Button>
-            <div className="flex items-center mt-12 mb-8">
-                <img src={`/logos/${school}.png`} style={{maxWidth: 64, maxHeight: 64}} className="mr-8"/>
+            <div className="sm:flex items-center mt-8 sm:mt-12 mb-8">
+                <img src={`/logos/${school}.png`} style={{maxWidth: 64, maxHeight: 64}} className="mr-8 mb-8 sm:mb-0"/>
                 <div>
                     <H1>COVID at {getSchoolName(school as schoolOpts)}</H1>
                     <p className="text-gray-500 text-xl mt-2">Testing result information for {getSchoolName(school as schoolOpts)}</p>
