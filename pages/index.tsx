@@ -80,7 +80,7 @@ export default function Home() {
                     <span className="text-green-600 font-medium">{caseDifference}</span> :
                     <span className="text-red-600 font-medium">+{caseDifference}</span>} from previous week
                 </p>
-                <div className="grid gap-5 my-12" style={{gridTemplateColumns: "repeat(8, 2.5rem)"}}>
+                <div className="flex flex-wrap my-12">
                     {allCases.map(d => (
                         <CaseDot case={d}/>
                     ))}
