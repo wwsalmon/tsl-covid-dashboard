@@ -9,11 +9,11 @@ import LegendSchool from "../components/LegendSchool";
 import StatSection from "../components/StatSection";
 import H3 from "../components/headless/H3";
 
-const allSchools: schoolOpts[] = ["scripps", "hmc", "cmc", "pitzer", "pomona"];
+const allSchools: schoolOpts[] = ["cmc", "hmc", "pitzer", "pomona", "scripps"];
 
 const getCasesFromItems = (items: DataItem[]) => allSchools.reduce((a: CaseItem[], b): CaseItem[] => {
     const thisItem = items.find(d => d.school === b);
-    if (!thisItem) return [];
+    if (!thisItem) return a;
     const numStudentCases = numberOrZero(thisItem.studentsPositive);
     const numEmployeeCases = numberOrZero(thisItem.employeesPositive);
     return [

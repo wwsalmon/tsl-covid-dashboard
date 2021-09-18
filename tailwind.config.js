@@ -14,7 +14,7 @@ module.exports = {
             colors: {
                 pomona: "#00549A",
                 pitzer: "#F4921C",
-                hmc: "#000000",
+                hmc: "#333333",
                 scripps: "#33735B",
                 cmc: "#98012E",
                 tsl: "#3274BE",
