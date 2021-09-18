@@ -5,7 +5,7 @@ export default function H1(props: React.HTMLProps<HTMLHeadingElement>) {
     return (
         <h1
             className={"font-serif text-3xl font-bold " + props.className}
-            {...props}
+            {...newProps}
         >
             {props.children}
         </h1>
