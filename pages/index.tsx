@@ -1,7 +1,7 @@
 import Container from "../components/headless/Container";
 import {useState} from "react";
 import data from "../data/data.json";
-import {addMinutes, format, subDays} from "date-fns";
+import {addDays, addMinutes, format, subDays} from "date-fns";
 import {CaseItem, DataItem, schoolOpts} from "../utils/types";
 import {numberOrZero} from "../utils/numberOrZero";
 import CaseDot from "../components/CaseDot";
@@ -65,11 +65,17 @@ export default function Home() {
 
     const percentage = (totalPositive / totalTested * 100).toFixed(2);
 
+    const weekStartDate = addMinutes(new Date(currentDate), new Date().getTimezoneOffset());
+    const weekEndDate = addMinutes(addDays(new Date(currentDate), 7), new Date().getTimezoneOffset());
+    const inSameMonth = weekStartDate.getMonth() === weekEndDate.getMonth();
+
     return (
         <Container width="5xl" className="flex my-16">
             <div className="flex-shrink-1 min-w-0 pr-8">
                 <h1 className="font-serif text-6xl font-medium">+{totalPositive} cases</h1>
-                <p className="mt-3 text-gray-500 text-xl">September 6 - 12</p>
+                <p className="mt-3 text-gray-500 text-xl">
+                    {format(weekStartDate, "MMMM d")} - {format(weekEndDate, inSameMonth ? "d" : "MMMM d")}
+                </p>
                 <p className="text-gray-500 text-xl">{caseDifference < 0 ?
                     <span className="text-green-600 font-medium">{caseDifference}</span> :
                     <span className="text-red-600 font-medium">+{caseDifference}</span>} from previous week
