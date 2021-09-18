@@ -8,6 +8,7 @@ import getSchoolName from "../utils/getSchoolName";
 import Button from "../components/headless/Button";
 import {FiArrowLeft} from "react-icons/all";
 import data from "../data/data.json";
+import SEO from "../components/SEO";
 
 export default function SchoolPage() {
     const router = useRouter();
@@ -22,6 +23,7 @@ export default function SchoolPage() {
 
     return (
         <Container width="3xl" className="my-16">
+            <SEO title={getSchoolName(school as schoolOpts)}/>
             <Button containerClassName="mb-8" childClassName="flex items-center" href="/">
                 <FiArrowLeft/>
                 <span className="ml-2">All 5Cs</span>

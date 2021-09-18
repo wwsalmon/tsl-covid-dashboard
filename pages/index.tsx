@@ -6,6 +6,7 @@ import LegendSchool from "../components/LegendSchool";
 import H3 from "../components/headless/H3";
 import MainStats, {getDateCounts} from "../components/MainStats";
 import H1 from "../components/headless/H1";
+import SEO from "../components/SEO";
 
 export const allSchools: schoolOpts[] = ["cmc", "hmc", "pitzer", "pomona", "scripps"];
 
@@ -21,6 +22,7 @@ export default function Home() {
 
     return (
         <Container width="5xl" className="my-16">
+            <SEO/>
             <H1>COVID at the 5Cs</H1>
             <p className="text-gray-500 text-xl mt-2">Your one dashboard for COVID information at the five Claremont Colleges</p>
             <hr className="my-12"/>

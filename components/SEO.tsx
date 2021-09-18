@@ -2,30 +2,17 @@ import {NextSeo} from "next-seo";
 import {useRouter} from "next/router";
 
 export default function SEO({
-                                  title = "NextJS starter: save hours of boilerplate setup",
-                                  description = "next-mongodb-nextauth-example allows you to skip hours of boilerplate setup with a single command when developing your app.",
-                                  imgUrl = null,
-                                  authorUsername = null,
-                                  publishedDate = null,
+                                  title = "TSL COVID Dashboard | 5Cs COVID info",
+                                  description = "Find the latest information about COVID tests and case counts as well as historical data at the Claremont Colleges",
                                   noindex = false,
-                              }: { title?: string, description?: string, imgUrl?: string, authorUsername?: string, publishedDate?: string, noindex?: boolean }) {
+                              }: { title?: string, description?: string, noindex?: boolean }) {
     const router = useRouter();
-    const fullTitle = title + (router.asPath === "/" ? "" : " | YourApp");
+    const fullTitle = title + (router.asPath === "/" ? "" : " | TSL COVID Dashboard");
 
     let openGraph = {
         title: fullTitle,
         description: description,
-        url: "https://your-domain.com" + router.asPath,
-        images: imgUrl ? [
-            { url: imgUrl }
-        ] : [
-            { url: "https://your-domain.com/defaultImage.png" }
-        ],
-    };
-
-    let twitter = {
-        site: "@your-at",
-        cardType: imgUrl ? "summary_large_image" : "summary",
+        url: "https://covid.tsl.news" + router.asPath,
     };
 
     return (
@@ -33,7 +20,6 @@ export default function SEO({
             title={fullTitle}
             description={description}
             openGraph={openGraph}
-            twitter={twitter}
             noindex={noindex}
         />
     );
