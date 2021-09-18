@@ -1,18 +1,24 @@
 import Container from "../components/headless/Container";
-import MainStats from "../components/MainStats";
+import MainStats, {getDateCounts} from "../components/MainStats";
 import {useState} from "react";
 import {useRouter} from "next/router";
-import {schoolOpts} from "../utils/types";
+import {DataItem, schoolOpts} from "../utils/types";
 import H1 from "../components/headless/H1";
 import getSchoolName from "../utils/getSchoolName";
 import Button from "../components/headless/Button";
 import {FiArrowLeft} from "react-icons/all";
+import data from "../data/data.json";
 
 export default function SchoolPage() {
     const router = useRouter();
     const { school } = router.query;
 
-    const [currentDate, setCurrentDate] = useState<string>("2021-08-30");
+    const dateCounts = getDateCounts(data.filter(d => d.school === school) as DataItem[]);
+
+    const [currentDate, setCurrentDate] = useState<string>(Object
+        .keys(dateCounts)
+        .sort((a, b) => +new Date(b[0]) - +new Date(a[0]))[0]
+    );
 
     return (
         <Container width="3xl" className="my-16">

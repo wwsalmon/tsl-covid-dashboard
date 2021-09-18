@@ -4,13 +4,19 @@ import data from "../data/data.json";
 import {DataItem, schoolOpts} from "../utils/types";
 import LegendSchool from "../components/LegendSchool";
 import H3 from "../components/headless/H3";
-import MainStats from "../components/MainStats";
+import MainStats, {getDateCounts} from "../components/MainStats";
 import H1 from "../components/headless/H1";
 
 export const allSchools: schoolOpts[] = ["cmc", "hmc", "pitzer", "pomona", "scripps"];
 
 export default function Home() {
-    const [currentDate, setCurrentDate] = useState<string>("2021-08-30");
+    const dateCounts = getDateCounts(data as DataItem[]);
+
+    const [currentDate, setCurrentDate] = useState<string>(Object
+        .keys(dateCounts)
+        .sort((a, b) => +new Date(b) - +new Date(a))[0]
+    );
+
     const currentItems = data.filter(d => d.weekStart === currentDate) as DataItem[];
 
     return (

@@ -21,7 +21,7 @@ const getCasesFromItems = (items: DataItem[]) => allSchools.reduce((a: CaseItem[
     ];
 }, []);
 
-const getDateCounts = (items: DataItem[]): {[weekStart: string]: number} => {
+export const getDateCounts = (items: DataItem[]): {[weekStart: string]: number} => {
     const returnValues = items.reduce((a: {[weekStart: string]: number}, b) => {
         const thisPositives = numberOrZero(b.employeesPositive) + numberOrZero(b.studentsPositive);
         const existingValue = a[b.weekStart];
