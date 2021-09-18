@@ -1,12 +1,12 @@
 import Container from "../components/headless/Container";
 import MainStats, {getDateCounts} from "../components/MainStats";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {useRouter} from "next/router";
 import {DataItem, schoolOpts} from "../utils/types";
 import H1 from "../components/headless/H1";
 import getSchoolName from "../utils/getSchoolName";
 import Button from "../components/headless/Button";
-import {FiArrowLeft} from "react-icons/all";
+import {FiArrowLeft} from "react-icons/fi";
 import data from "../data/data.json";
 import SEO from "../components/SEO";
 
@@ -16,10 +16,24 @@ export default function SchoolPage() {
 
     const dateCounts = getDateCounts(data.filter(d => d.school === school) as DataItem[]);
 
-    const [currentDate, setCurrentDate] = useState<string>(Object
-        .keys(dateCounts)
-        .sort((a, b) => +new Date(b[0]) - +new Date(a[0]))[0]
-    );
+    const [currentDate, setCurrentDate] = useState<string>("");
+
+    useEffect(() => {
+        const {school} = router.query;
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const weekStart = urlParams.get("weekStart");
+
+        if (!weekStart) {
+            setCurrentDate(
+                Object
+                    .keys(dateCounts)
+                    .sort((a, b) => +new Date(b[0]) - +new Date(a[0]))[0]
+            );
+        } else if (school && Object.keys(dateCounts).includes(weekStart.toString()) && weekStart !== currentDate) {
+            setCurrentDate(weekStart.toString());
+        }
+    }, [dateCounts, router.query]);
 
     return (
         <Container width="3xl" className="my-4 sm:my-16">
@@ -36,7 +50,9 @@ export default function SchoolPage() {
                 </div>
             </div>
             <hr className="my-12"/>
-            <MainStats currentDate={currentDate} setCurrentDate={setCurrentDate} school={school as schoolOpts}/>
+            {currentDate && (
+                <MainStats currentDate={currentDate} setCurrentDate={setCurrentDate} school={school as schoolOpts}/>
+            )}
         </Container>
     );
 }

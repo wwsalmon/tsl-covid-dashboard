@@ -9,15 +9,15 @@ import H3 from "./headless/H3";
 
 export default function Navbar() {
     const router = useRouter();
+    const {school} = router.query;
 
-    const themeRGBColor = {
-        "/cmc": "152,1,46",
-        "/hmc": "51,51,51",
-        "/pomona": "0,84,154",
-        "/pitzer": "244,146,28",
-        "/scripps": "51,115,91",
-        "/": "50,116,190",
-    }[router.asPath];
+    const themeRGBColor = router.route === school ? {
+        "cmc": "152,1,46",
+        "hmc": "51,51,51",
+        "pomona": "0,84,154",
+        "pitzer": "244,146,28",
+        "scripps": "51,115,91",
+    }[school] : "50,116,190";
 
     const [menuOpen, setMenuOpen] = useState<boolean>(false);
 

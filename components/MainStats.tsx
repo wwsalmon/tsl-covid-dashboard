@@ -8,6 +8,7 @@ import CaseDot from "./CaseDot";
 import StatSection from "./StatSection";
 import H3 from "./headless/H3";
 import getBgClass from "../utils/getBgClass";
+import {useRouter} from "next/router";
 
 const getCasesFromItems = (items: DataItem[]) => allSchools.reduce((a: CaseItem[], b): CaseItem[] => {
     const thisItem = items.find(d => d.school === b);
@@ -35,6 +36,8 @@ export const getDateCounts = (items: DataItem[]): {[weekStart: string]: number} 
 }
 
 export default function MainStats({school, currentDate, setCurrentDate}: {school?: schoolOpts, currentDate: string, setCurrentDate: Dispatch<SetStateAction<string>>}) {
+    const router = useRouter();
+
     const dateCounts = getDateCounts((school ? data.filter(d => d.school === school) : data) as DataItem[]);
     const maxCount = Math.max(...Object.values(dateCounts));
 
@@ -99,7 +102,10 @@ export default function MainStats({school, currentDate, setCurrentDate}: {school
                         Object.entries(dateCounts)
                             .sort((a, b) => +new Date(b[0]) - +new Date(a[0]))
                             .map(([key, value]) => (
-                                <button className="w-16 h-40 border-l border-l-gray-100 relative flex items-end flex-shrink-0 hover:bg-gray-100" onClick={() => setCurrentDate(key)}>
+                                <button className="w-16 h-40 border-l border-l-gray-100 relative flex items-end flex-shrink-0 hover:bg-gray-100" onClick={() => {
+                                    setCurrentDate(key);
+                                    router.push(router.route, `/${school || ""}?weekStart=${key}`, {shallow: true});
+                                }}>
                                     <div className="absolute top-2 left-2 text-xs text-gray-500"><span>{format(addMinutes(new Date(key), new Date().getTimezoneOffset()), "MMM d")}</span></div>
                                     <div className={`w-full ${primaryBgClass} ${currentDate === key ? "" : "opacity-50"}`} style={{height: `${75 * value / maxCount}%`}}/>
                                 </button>
