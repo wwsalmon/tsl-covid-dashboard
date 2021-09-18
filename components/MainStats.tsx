@@ -73,7 +73,7 @@ export default function MainStats({school, currentDate, setCurrentDate}: {school
         <>
             <h1 className="font-serif text-6xl font-medium">+{totalPositive} cases</h1>
             <p className="mt-3 text-gray-500 text-xl">
-                {!school && "at the 5Cs from "}{format(weekStartDate, "MMMM d")} - {format(weekEndDate, inSameMonth ? "d" : "MMMM d")}
+                {!school && "at the Claremont Colleges from "}{format(weekStartDate, "MMMM d")} - {format(weekEndDate, inSameMonth ? "d" : "MMMM d")}
             </p>
             <p className="text-gray-500 text-xl">{caseDifference < 0 ?
                 <span className="text-green-600 font-medium">{caseDifference}</span> :

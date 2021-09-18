@@ -22,17 +22,17 @@ export default function SchoolPage() {
     );
 
     return (
-        <Container width="3xl" className="my-16">
+        <Container width="3xl" className="my-4 sm:my-16">
             <SEO title={getSchoolName(school as schoolOpts)}/>
             <Button containerClassName="mb-8" childClassName="flex items-center" href="/">
                 <FiArrowLeft/>
                 <span className="ml-2">All 5Cs</span>
             </Button>
-            <div className="sm:flex items-center mt-8 sm:mt-12 mb-8">
+            <div className="sm:flex items-center sm:mt-12 sm:mb-8">
                 <img src={`/logos/${school}.png`} style={{maxWidth: 64, maxHeight: 64}} className="mr-8 mb-8 sm:mb-0"/>
                 <div>
                     <H1>COVID at {getSchoolName(school as schoolOpts)}</H1>
-                    <p className="text-gray-500 text-xl mt-2">Testing result information for {getSchoolName(school as schoolOpts)}</p>
+                    <p className="text-gray-500 text-xl mt-2">Testing result information for {getSchoolName(school as schoolOpts)} in Claremont, CA</p>
                 </div>
             </div>
             <hr className="my-12"/>
