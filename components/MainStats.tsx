@@ -91,7 +91,7 @@ export default function MainStats({school, currentDate, setCurrentDate}: {school
                 {allCases.map(d => (
                     <CaseDot case={d}/>
                 ))}
-                {!school && allSchools.map(school => {
+                {allSchools.filter(d => school ? d === school : true).map(school => {
                     const thisItem = currentItems.find(d => d.school === school);
                     const allPositives = thisItem ? (numberOrZero(thisItem.studentsPositive) + numberOrZero(thisItem.employeesPositive)) : 0;
                     const allTests = thisItem ? (numberOrZero(thisItem.studentsTested) + numberOrZero(thisItem.employeesTested)) : 0;
