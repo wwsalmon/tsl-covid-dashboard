@@ -102,6 +102,10 @@ export default function MainStats({school, currentDate, setCurrentDate}: {school
             </div>
             <div className="flex items-center flex-wrap mt-6 mb-12 text-gray-500">
                 <div className="flex items-center mr-8 mb-2">
+                    <div className="w-3 h-3 rounded-full mr-4 bg-gray-500"/>
+                    <span className="text-xs">One positive case</span>
+                </div>
+                <div className="flex items-center mr-8 mb-2">
                     <span className="mr-4 font-bold">E</span>
                     <span className="text-xs">Employee</span>
                 </div>
