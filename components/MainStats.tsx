@@ -87,10 +87,27 @@ export default function MainStats({school, currentDate, setCurrentDate}: {school
                 <span className="text-green-600 font-medium">{caseDifference}</span> :
                 <span className="text-red-600 font-medium">+{caseDifference}</span>} from previous week
             </p>
-            <div className="flex flex-wrap my-12">
+            <div className="flex flex-wrap mt-12">
                 {allCases.map(d => (
                     <CaseDot case={d}/>
                 ))}
+                {allSchools.map(school => {
+                    const thisItem = currentItems.find(d => d.school === school);
+                    const allTests = thisItem ? (numberOrZero(thisItem.studentsTested) + numberOrZero(thisItem.employeesTested)) : 0;
+                    return allTests === 0 ? (
+                        <CaseDot case={{school: school, isNoReport: true}}/>
+                    ) : <></>;
+                })}
+            </div>
+            <div className="flex items-center flex-wrap mt-6 mb-12 text-gray-500">
+                <div className="flex items-center mr-8">
+                    <span className="mr-4 font-bold">E</span>
+                    <span className="text-xs">Employee</span>
+                </div>
+                <div className="flex items-center">
+                    <span className="mr-4 font-bold">N</span>
+                    <span className="text-xs">No tests reported</span>
+                </div>
             </div>
             <StatSection
                 primary={`${percentage}% positivity rate`}
