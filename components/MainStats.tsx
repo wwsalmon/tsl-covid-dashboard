@@ -107,13 +107,13 @@ export default function MainStats({school, currentDate, setCurrentDate}: {school
                         Object.entries(dateCounts)
                             .sort((a, b) => +new Date(b[0]) - +new Date(a[0]))
                             .map(([key, value]) => (
-                                <button className="w-16 h-40 border-l border-l-gray-100 relative flex items-end flex-shrink-0 hover:bg-gray-100" onClick={() => {
+                                <button className={`w-16 h-40 border-l border-l-gray-100 relative flex items-end flex-shrink-0 hover:bg-gray-100 ${currentDate === key ? "bg-gray-50" : ""}`} onClick={() => {
                                     setCurrentDate(key);
                                     router.push(router.route, `/${school || ""}?weekStart=${key}`, {shallow: true});
                                 }}>
                                     <div className="absolute top-2 left-2 text-xs text-gray-500"><span>{format(addMinutes(new Date(key), new Date().getTimezoneOffset()), "MMM d")}</span></div>
                                     <div className={`w-full relative ${primaryBgClass} ${currentDate === key ? "" : "opacity-50"}`} style={{height: `${75 * value / maxCount}%`}}/>
-                                    <div className="w-2 h-2 bg-white border-2 border-gray-300 absolute rounded-full" style={{top: `${100 - (dateTests[key] / maxTests) * 75}%`, left: "50%", transform: "translate(-50%, -50%)"}}/>
+                                    <div className={`w-2 h-2 bg-white border-2 ${currentDate === key ? "border-gray-500" : "border-gray-300"} absolute rounded-full`} style={{top: `${100 - (dateTests[key] / maxTests) * 75}%`, left: "50%", transform: "translate(-50%, -50%)"}}/>
                                 </button>
                             ))
                     }
