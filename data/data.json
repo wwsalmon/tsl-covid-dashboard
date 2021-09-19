@@ -1,5 +1,14 @@
 [
   {
+    "school": "pomona",
+    "weekStart": "2021-09-13",
+    "studentsTested": 1658,
+    "studentsPositive": 0,
+    "employees": 171,
+    "employeesPositive": 0,
+    "reported": "2021-09-19"
+  },
+  {
     "school": "scripps",
     "weekStart": "2021-09-06",
     "studentsTested": 229,
@@ -573,7 +582,7 @@
     "studentsPositive": 0,
     "employeesTested": 84,
     "employeesPositive": 0,
-    "reported": "historic"
+    "reported": "2021-09-17"
   },
   {
     "school": "pitzer",
