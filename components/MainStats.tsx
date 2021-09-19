@@ -24,13 +24,13 @@ const getCasesFromItems = (items: DataItem[]) => allSchools.reduce((a: CaseItem[
     ];
 }, []);
 
-export const getDateCounts = (items: DataItem[]): {[weekStart: string]: number} => {
+export const getDateCounts = (items: DataItem[], count: "Tested" | "Positive"): {[weekStart: string]: number} => {
     const returnValues = items.reduce((a: {[weekStart: string]: number}, b) => {
-        const thisPositives = numberOrZero(b.employeesPositive) + numberOrZero(b.studentsPositive);
+        const thisCount = numberOrZero(b[`employees${count}`]) + numberOrZero(b[`students${count}`]);
         const existingValue = a[b.weekStart];
-        if (existingValue === undefined) return {...a, [b.weekStart]: thisPositives};
+        if (existingValue === undefined) return {...a, [b.weekStart]: thisCount};
         let newValues = {...a};
-        newValues[b.weekStart] = a[b.weekStart] + thisPositives;
+        newValues[b.weekStart] = a[b.weekStart] + thisCount;
         return newValues;
     }, {});
 
@@ -40,8 +40,11 @@ export const getDateCounts = (items: DataItem[]): {[weekStart: string]: number} 
 export default function MainStats({school, currentDate, setCurrentDate}: {school?: schoolOpts, currentDate: string, setCurrentDate: Dispatch<SetStateAction<string>>}) {
     const router = useRouter();
 
-    const dateCounts = getDateCounts((school ? data.filter(d => d.school === school) : data) as DataItem[]);
+    const dateCounts = getDateCounts((school ? data.filter(d => d.school === school) : data) as DataItem[], "Positive");
     const maxCount = Math.max(...Object.values(dateCounts));
+
+    const dateTests = getDateCounts((school ? data.filter(d => d.school === school) : data) as DataItem[], "Tested");
+    const maxTests = Math.max(...Object.values(dateTests));
 
     let currentItems = data.filter(d => d.weekStart === currentDate) as DataItem[];
     if (school) currentItems = currentItems.filter(d => d.school === school);
@@ -99,7 +102,7 @@ export default function MainStats({school, currentDate, setCurrentDate}: {school
             <H3>Historical data</H3>
             <p className="text-gray-500">Click on a bar for details</p>
             <div className="overflow-x-auto w-full my-8">
-                <div className="flex">
+                <div className="flex pb-2">
                     {
                         Object.entries(dateCounts)
                             .sort((a, b) => +new Date(b[0]) - +new Date(a[0]))
@@ -109,10 +112,21 @@ export default function MainStats({school, currentDate, setCurrentDate}: {school
                                     router.push(router.route, `/${school || ""}?weekStart=${key}`, {shallow: true});
                                 }}>
                                     <div className="absolute top-2 left-2 text-xs text-gray-500"><span>{format(addMinutes(new Date(key), new Date().getTimezoneOffset()), "MMM d")}</span></div>
-                                    <div className={`w-full ${primaryBgClass} ${currentDate === key ? "" : "opacity-50"}`} style={{height: `${75 * value / maxCount}%`}}/>
+                                    <div className={`w-full relative ${primaryBgClass} ${currentDate === key ? "" : "opacity-50"}`} style={{height: `${75 * value / maxCount}%`}}/>
+                                    <div className="w-2 h-2 bg-white border-2 border-gray-300 absolute rounded-full" style={{top: `${100 - (dateTests[key] / maxTests) * 75}%`, left: "50%", transform: "translate(-50%, -50%)"}}/>
                                 </button>
                             ))
                     }
+                </div>
+            </div>
+            <div className="flex items-center flex-wrap text-gray-500 text-xs">
+                <div className="flex items-center mr-8">
+                    <div className="w-3 h-3 bg-tsl mr-4"/>
+                    <p>Number of positives (max {maxCount})</p>
+                </div>
+                <div className="flex items-center mr-8">
+                    <div className="w-2 h-2 rounded-full border-2 border-gray-300 mr-4"/>
+                    <p>Number of tests (max {maxTests.toLocaleString()})</p>
                 </div>
             </div>
             <hr className="my-12"/>
