@@ -11,6 +11,7 @@ import getBgClass from "../utils/getBgClass";
 import {useRouter} from "next/router";
 import DataDescription from "./DataDescription";
 import Link from "next/link";
+import getSchoolShortName from "../utils/getSchoolShortName";
 
 const getCasesFromItems = (items: DataItem[]) => allSchools.reduce((a: CaseItem[], b): CaseItem[] => {
     const thisItem = items.find(d => d.school === b);
@@ -124,6 +125,11 @@ export default function MainStats({school, currentDate, setCurrentDate}: {school
                 percentage={+percentage}
                 bgClass={primaryBgClass}
             />
+            {school && (currentItems[0].reported !== "historic") && (
+                <p className="mt-8 text-gray-500">
+                    This week's data was reported by {getSchoolShortName(school)} on {format(addMinutes(new Date(currentItems[0].reported), new Date().getTimezoneOffset()), "MMMM d, yyyy")}
+                </p>
+            )}
             <hr className="my-12"/>
             <H3>Historical data</H3>
             <p className="text-gray-500">Click on a bar for details</p>
