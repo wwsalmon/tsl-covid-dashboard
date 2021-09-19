@@ -30,12 +30,6 @@ export default function Home() {
                     <hr className="my-12 sm:hidden"/>
                     <H3>Data by school</H3>
                     <p className="text-gray-500 mb-8">Click on a school for details</p>
-                    <div className="flex items-center py-3 px-4 rounded">
-                        <div className="w-4 h-4 mr-4 flex items-center justify-center">
-                            <span className="font-bold text-gray-500">E</span>
-                        </div>
-                        <h3 className="font-serif font-bold my-1 text-gray-700">Employee</h3>
-                    </div>
                     {allSchools.map(school => (
                         <LegendSchool school={school} items={currentItems}/>
                     ))}
