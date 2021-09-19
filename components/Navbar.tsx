@@ -11,7 +11,7 @@ export default function Navbar() {
     const router = useRouter();
     const {school} = router.query;
 
-    const themeRGBColor = router.route === "/[school]" ? {
+    const themeRGBColor = (router.route === "/[school]" && school) ? {
         "cmc": "152,1,46",
         "hmc": "51,51,51",
         "pomona": "0,84,154",
