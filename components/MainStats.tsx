@@ -93,20 +93,25 @@ export default function MainStats({school, currentDate, setCurrentDate}: {school
                 ))}
                 {!school && allSchools.map(school => {
                     const thisItem = currentItems.find(d => d.school === school);
+                    const allPositives = thisItem ? (numberOrZero(thisItem.studentsPositive) + numberOrZero(thisItem.employeesPositive)) : 0;
                     const allTests = thisItem ? (numberOrZero(thisItem.studentsTested) + numberOrZero(thisItem.employeesTested)) : 0;
-                    return allTests === 0 ? (
-                        <CaseDot case={{school: school, isNoReport: true}}/>
-                    ) : <></>;
+                    return (
+                        <CaseDot case={{school: school, isNoReport: allTests === 0, isNoCases: allTests !== 0 && allPositives === 0}}/>
+                    );
                 })}
             </div>
             <div className="flex items-center flex-wrap mt-6 mb-12 text-gray-500">
-                <div className="flex items-center mr-8">
+                <div className="flex items-center mr-8 mb-2">
                     <span className="mr-4 font-bold">E</span>
                     <span className="text-xs">Employee</span>
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center mr-8 mb-2">
                     <span className="mr-4 font-bold">N</span>
                     <span className="text-xs">No tests reported</span>
+                </div>
+                <div className="flex items-center mb-2">
+                    <span className="mr-4 font-bold">0</span>
+                    <span className="text-xs">No positive cases</span>
                 </div>
             </div>
             <StatSection

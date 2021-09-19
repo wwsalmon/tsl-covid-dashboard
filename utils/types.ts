@@ -13,5 +13,6 @@ export interface DataItem {
 export interface CaseItem {
     isEmployee?: boolean;
     isNoReport?: boolean,
+    isNoCases?: boolean,
     school: schoolOpts;
 }
