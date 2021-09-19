@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import NProgress from "nprogress";
 import "../styles/nprogress.css";
 import Router from "next/router";
+import Footer from "../components/Footer";
 
 Router.events.on("routeChangeStart", (url, {shallow}) => {
     if (!shallow) NProgress.start();
@@ -18,6 +19,7 @@ export default function App({Component, pageProps}) {
         <div id="app-root">
             <Navbar/>
             <Component {...pageProps} />
+            <Footer/>
         </div>
     );
 }
