@@ -74,7 +74,7 @@ export default function MainStats({school, currentDate, setCurrentDate}: {school
     const percentage = (totalPositive / totalTested * 100).toFixed(2);
 
     const weekStartDate = addMinutes(new Date(currentDate), new Date().getTimezoneOffset());
-    const weekEndDate = addMinutes(addDays(new Date(currentDate), 7), new Date().getTimezoneOffset());
+    const weekEndDate = addMinutes(addDays(new Date(currentDate), 6), new Date().getTimezoneOffset());
     const inSameMonth = weekStartDate.getMonth() === weekEndDate.getMonth();
 
     return (
