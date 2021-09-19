@@ -137,11 +137,11 @@ export default function MainStats({school, currentDate, setCurrentDate}: {school
                 </div>
             </div>
             <div className="flex items-center flex-wrap text-gray-500 text-xs">
-                <div className="flex items-center mr-8">
+                <div className="flex items-center mr-8 mb-2">
                     <div className="w-3 h-3 bg-tsl mr-4"/>
                     <p>Number of positives (max {maxCount})</p>
                 </div>
-                <div className="flex items-center mr-8">
+                <div className="flex items-center mr-8 mb-2">
                     <div className="w-2 h-2 rounded-full border-2 border-gray-300 mr-4"/>
                     <p>Number of tests (max {maxTests.toLocaleString()})</p>
                 </div>
