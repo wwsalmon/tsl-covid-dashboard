@@ -153,7 +153,7 @@ export default function MainStats({school, currentDate, setCurrentDate}: {school
             </div>
             <div className="flex items-center flex-wrap text-gray-500 text-xs">
                 <div className="flex items-center mr-8 mb-2">
-                    <div className="w-3 h-3 bg-tsl mr-4"/>
+                    <div className={`w-3 h-3 mr-4 ${school ? getBgClass(school) : "bg-tsl"}`}/>
                     <p>Number of positives (max {maxCount})</p>
                 </div>
                 <div className="flex items-center mr-8 mb-2">
