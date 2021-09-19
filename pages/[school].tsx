@@ -14,7 +14,7 @@ export default function SchoolPage() {
     const router = useRouter();
     const { school } = router.query;
 
-    const dateCounts = getDateCounts(data.filter(d => d.school === school) as DataItem[]);
+    const dateCounts = getDateCounts(data.filter(d => d.school === school) as DataItem[], "Positive");
 
     const [currentDate, setCurrentDate] = useState<string>("");
 
