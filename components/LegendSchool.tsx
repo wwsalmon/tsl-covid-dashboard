@@ -19,7 +19,7 @@ const LegendSchool = ({school, items}: {school: schoolOpts, items: DataItem[]}) 
                     <h3 className="font-serif font-bold text-gray-700">{getSchoolName(school)}</h3>
                     <div className="text-gray-500 flex items-center mb-2">
                         {allTests === 0 ? (
-                            <span>No tests conducted</span>
+                            <span>No tests reported</span>
                         ) : (
                             <>
                                 <span><b>+{allPositives}</b>/{allTests.toLocaleString()}</span>
