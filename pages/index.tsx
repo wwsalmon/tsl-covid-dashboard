@@ -10,7 +10,7 @@ import SEO from "../components/SEO";
 export const allSchools: schoolOpts[] = ["cmc", "hmc", "pitzer", "pomona", "scripps"];
 
 export default function Home() {
-    const dateCounts = getDateCounts(data as DataItem[]);
+    const dateCounts = getDateCounts(data as DataItem[], "Tested");
 
     const [currentDate, setCurrentDate] = useState<string>(Object
         .keys(dateCounts)
