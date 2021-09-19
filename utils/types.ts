@@ -7,6 +7,7 @@ export interface DataItem {
     studentsPositive: number,
     employeesTested: number,
     employeesPositive: number,
+    reported: string,
 }
 
 export interface CaseItem {

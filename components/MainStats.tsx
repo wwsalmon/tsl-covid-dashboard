@@ -9,6 +9,8 @@ import StatSection from "./StatSection";
 import H3 from "./headless/H3";
 import getBgClass from "../utils/getBgClass";
 import {useRouter} from "next/router";
+import DataDescription from "./DataDescription";
+import Link from "next/link";
 
 const getCasesFromItems = (items: DataItem[]) => allSchools.reduce((a: CaseItem[], b): CaseItem[] => {
     const thisItem = items.find(d => d.school === b);
@@ -115,7 +117,13 @@ export default function MainStats({school, currentDate, setCurrentDate}: {school
             </div>
             <hr className="my-12"/>
             <H3>Data sourcing</H3>
-            <p className="mt-2">The data in this portal is aggregated from data published by each of the 5C schools.</p>
+            <div className="prose mt-4">
+                {school ? (
+                    <DataDescription school={school}/>
+                ) : (
+                    <p>The data in this portal is aggregated from data published by each of the 5C schools each Sunday. For specific sources and more information, click into a school's page or see <Link href="/about"><a>"About this dashboard"</a></Link>.</p>
+                )}
+            </div>
         </>
     );
 }

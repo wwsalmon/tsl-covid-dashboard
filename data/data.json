@@ -5,550 +5,619 @@
     "studentsTested": 229,
     "studentsPositive": 2,
     "employees": 252,
-    "employeesPositive": 0
-  },
-  {
-    "school":"hmc",
-    "weekStart":"2021-09-06",
-    "studentsTested":923,
-    "studentsPositive":1,
-    "employeesTested":64,
-    "employeesPositive":0
-  },
-  {
-    "school":"hmc",
-    "weekStart":"2021-08-30",
-    "studentsTested":1084,
-    "studentsPositive":2,
-    "employeesTested":40,
-    "employeesPositive":0
-  },
-  {
-    "school":"hmc",
-    "weekStart":"2021-08-23",
-    "studentsTested":158,
-    "studentsPositive":0,
-    "employeesTested":9,
-    "employeesPositive":0
-  },
-  {
-    "school":"hmc",
-    "weekStart":"2021-08-16",
-    "studentsTested":21,
-    "studentsPositive":0,
-    "employeesTested":31,
-    "employeesPositive":0
-  },
-  {
-    "school":"hmc",
-    "weekStart":"2021-08-09",
-    "studentsTested":5,
-    "studentsPositive":0,
-    "employeesTested":30,
-    "employeesPositive":0
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-09-06",
-    "studentsTested":1775.0,
-    "studentsPositive":0.0,
-    "employeesTested":163,
-    "employeesPositive":0
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-08-30",
-    "studentsTested":1856.0,
-    "studentsPositive":4.0,
-    "employeesTested":185,
-    "employeesPositive":3
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-08-23",
-    "studentsTested":763.0,
-    "studentsPositive":1.0,
-    "employeesTested":154,
-    "employeesPositive":2
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-08-16",
-    "studentsTested":"nan",
-    "studentsPositive":4.0,
-    "employeesTested":135,
-    "employeesPositive":0
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-08-09",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":116,
-    "employeesPositive":0
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-08-02",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":100,
-    "employeesPositive":0
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-07-26",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":121,
-    "employeesPositive":1
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-07-19",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":102,
-    "employeesPositive":0
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-07-12",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":75,
-    "employeesPositive":1
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-07-05",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":64,
-    "employeesPositive":0
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-06-28",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":57,
-    "employeesPositive":1
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-06-21",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":50,
-    "employeesPositive":0
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-06-14",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":49,
-    "employeesPositive":0
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-06-07",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":62,
-    "employeesPositive":0
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-05-31",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":201,
-    "employeesPositive":0
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-05-24",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":271,
-    "employeesPositive":0
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-05-17",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":274,
-    "employeesPositive":0
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-05-10",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":290,
-    "employeesPositive":0
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-05-03",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":316,
-    "employeesPositive":0
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-04-26",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":335,
-    "employeesPositive":0
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-04-19",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":316,
-    "employeesPositive":0
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-04-12",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":322,
-    "employeesPositive":0
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-04-05",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":309,
-    "employeesPositive":0
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-03-29",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":280,
-    "employeesPositive":0
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-03-22",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":283,
-    "employeesPositive":0
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-03-15",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":298,
-    "employeesPositive":0
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-03-08",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":239,
-    "employeesPositive":0
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-03-01",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":292,
-    "employeesPositive":0
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-02-22",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":302,
-    "employeesPositive":0
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-02-15",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":293,
-    "employeesPositive":0
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-02-08",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":294,
-    "employeesPositive":1
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-02-01",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":298,
-    "employeesPositive":0
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-01-25",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":284,
-    "employeesPositive":2
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-01-18",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":115,
-    "employeesPositive":3
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-01-11",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":177,
-    "employeesPositive":4
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2021-01-04",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":147,
-    "employeesPositive":2
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2020-12-28",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":205,
-    "employeesPositive":10
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2020-12-21",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":188,
-    "employeesPositive":5
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2020-12-14",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":174,
-    "employeesPositive":2
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2020-12-07",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":90,
-    "employeesPositive":1
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2020-11-30",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":273,
-    "employeesPositive":2
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2020-11-23",
-    "studentsTested":"nan",
-    "studentsPositive":"nan",
-    "employeesTested":22,
-    "employeesPositive":0
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2020-11-16",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":27,
-    "employeesPositive":1
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2020-11-09",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":3,
-    "employeesPositive":0
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2020-11-02",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":3,
-    "employeesPositive":0
-  },
-  {
-    "school":"pomona",
-    "weekStart":"2020-10-26",
-    "studentsTested":"nan",
-    "studentsPositive":0.0,
-    "employeesTested":2,
-    "employeesPositive":0
-  },
-  {
-    "school":"cmc",
-    "weekStart":"2021-09-13",
-    "studentsTested":1343,
-    "studentsPositive":0,
-    "employeesTested":124,
-    "employeesPositive":0
-  },
-  {
-    "school":"cmc",
-    "weekStart":"2021-09-06",
-    "studentsTested":1258,
-    "studentsPositive":1,
-    "employeesTested":129,
-    "employeesPositive":1
-  },
-  {
-    "school":"cmc",
-    "weekStart":"2021-08-30",
-    "studentsTested":1327,
-    "studentsPositive":7,
-    "employeesTested":114,
-    "employeesPositive":0
-  },
-  {
-    "school":"cmc",
-    "weekStart":"2021-08-23",
-    "studentsTested":1140,
-    "studentsPositive":2,
-    "employeesTested":110,
-    "employeesPositive":0
-  },
-  {
-    "school":"cmc",
-    "weekStart":"2021-08-16",
-    "studentsTested":423,
-    "studentsPositive":1,
-    "employeesTested":87,
-    "employeesPositive":0
-  },
-  {
-    "school":"cmc",
-    "weekStart":"2021-08-09",
-    "studentsTested":181,
-    "studentsPositive":3,
-    "employeesTested":56,
-    "employeesPositive":0
-  },
-  {
-    "school":"cmc",
-    "weekStart":"2021-08-02",
-    "studentsTested":5,
-    "studentsPositive":0,
-    "employeesTested":42,
-    "employeesPositive":3
-  },
-  {
-    "school":"cmc",
-    "weekStart":"2021-07-26",
-    "studentsTested":7,
-    "studentsPositive":0,
-    "employeesTested":20,
-    "employeesPositive":0
-  },
-  {
-    "school":"cmc",
-    "weekStart":"2021-07-19",
-    "studentsTested":4,
-    "studentsPositive":0,
-    "employeesTested":15,
-    "employeesPositive":0
-  },
-  {
-    "school":"cmc",
-    "weekStart":"2021-07-12",
-    "studentsTested":6,
-    "studentsPositive":0,
-    "employeesTested":15,
-    "employeesPositive":0
-  },
-  {
-    "school":"cmc",
-    "weekStart":"2021-07-05",
-    "studentsTested":3,
-    "studentsPositive":0,
-    "employeesTested":10,
-    "employeesPositive":0
-  },
-  {
-    "school":"pitzer",
-    "weekStart":"2021-09-13",
-    "studentsTested":961,
-    "studentsPositive":0,
-    "employeesTested":84,
-    "employeesPositive":0
-  },
-  {
-    "school":"pitzer",
-    "weekStart":"2021-09-06",
-    "studentsTested":1063,
-    "studentsPositive":0,
-    "employeesTested":70,
-    "employeesPositive":0
-  },
-  {
-    "school":"pitzer",
-    "weekStart":"2021-08-30",
-    "studentsTested":1123,
-    "studentsPositive":3,
-    "employeesTested":55,
-    "employeesPositive":0
-  },
-  {
-    "school":"pitzer",
-    "weekStart":"2021-08-23",
-    "studentsTested":885,
-    "studentsPositive":2,
-    "employeesTested":51,
-    "employeesPositive":1
-  },
-  {
-    "school":"pitzer",
-    "weekStart":"2021-08-16",
-    "studentsTested":356,
-    "studentsPositive":1,
-    "employeesTested":47,
-    "employeesPositive":0
-  },
-  {
-    "school":"pitzer",
-    "weekStart":"2021-08-09",
-    "studentsTested":125,
-    "studentsPositive":0,
-    "employeesTested":43,
-    "employeesPositive":0
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "hmc",
+    "weekStart": "2021-09-06",
+    "studentsTested": 923,
+    "studentsPositive": 1,
+    "employeesTested": 64,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "hmc",
+    "weekStart": "2021-08-30",
+    "studentsTested": 1084,
+    "studentsPositive": 2,
+    "employeesTested": 40,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "hmc",
+    "weekStart": "2021-08-23",
+    "studentsTested": 158,
+    "studentsPositive": 0,
+    "employeesTested": 9,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "hmc",
+    "weekStart": "2021-08-16",
+    "studentsTested": 21,
+    "studentsPositive": 0,
+    "employeesTested": 31,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "hmc",
+    "weekStart": "2021-08-09",
+    "studentsTested": 5,
+    "studentsPositive": 0,
+    "employeesTested": 30,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-09-06",
+    "studentsTested": 1775,
+    "studentsPositive": 0,
+    "employeesTested": 163,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-08-30",
+    "studentsTested": 1856,
+    "studentsPositive": 4,
+    "employeesTested": 185,
+    "employeesPositive": 3,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-08-23",
+    "studentsTested": 763,
+    "studentsPositive": 1,
+    "employeesTested": 154,
+    "employeesPositive": 2,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-08-16",
+    "studentsTested": "nan",
+    "studentsPositive": 4,
+    "employeesTested": 135,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-08-09",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 116,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-08-02",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 100,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-07-26",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 121,
+    "employeesPositive": 1,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-07-19",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 102,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-07-12",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 75,
+    "employeesPositive": 1,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-07-05",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 64,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-06-28",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 57,
+    "employeesPositive": 1,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-06-21",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 50,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-06-14",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 49,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-06-07",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 62,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-05-31",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 201,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-05-24",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 271,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-05-17",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 274,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-05-10",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 290,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-05-03",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 316,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-04-26",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 335,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-04-19",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 316,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-04-12",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 322,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-04-05",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 309,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-03-29",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 280,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-03-22",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 283,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-03-15",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 298,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-03-08",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 239,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-03-01",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 292,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-02-22",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 302,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-02-15",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 293,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-02-08",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 294,
+    "employeesPositive": 1,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-02-01",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 298,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-01-25",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 284,
+    "employeesPositive": 2,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-01-18",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 115,
+    "employeesPositive": 3,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-01-11",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 177,
+    "employeesPositive": 4,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-01-04",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 147,
+    "employeesPositive": 2,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2020-12-28",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 205,
+    "employeesPositive": 10,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2020-12-21",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 188,
+    "employeesPositive": 5,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2020-12-14",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 174,
+    "employeesPositive": 2,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2020-12-07",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 90,
+    "employeesPositive": 1,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2020-11-30",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 273,
+    "employeesPositive": 2,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2020-11-23",
+    "studentsTested": "nan",
+    "studentsPositive": "nan",
+    "employeesTested": 22,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2020-11-16",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 27,
+    "employeesPositive": 1,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2020-11-09",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 3,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2020-11-02",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 3,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2020-10-26",
+    "studentsTested": "nan",
+    "studentsPositive": 0,
+    "employeesTested": 2,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "cmc",
+    "weekStart": "2021-09-13",
+    "studentsTested": 1343,
+    "studentsPositive": 0,
+    "employeesTested": 124,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "cmc",
+    "weekStart": "2021-09-06",
+    "studentsTested": 1258,
+    "studentsPositive": 1,
+    "employeesTested": 129,
+    "employeesPositive": 1,
+    "reported": "historic"
+  },
+  {
+    "school": "cmc",
+    "weekStart": "2021-08-30",
+    "studentsTested": 1327,
+    "studentsPositive": 7,
+    "employeesTested": 114,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "cmc",
+    "weekStart": "2021-08-23",
+    "studentsTested": 1140,
+    "studentsPositive": 2,
+    "employeesTested": 110,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "cmc",
+    "weekStart": "2021-08-16",
+    "studentsTested": 423,
+    "studentsPositive": 1,
+    "employeesTested": 87,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "cmc",
+    "weekStart": "2021-08-09",
+    "studentsTested": 181,
+    "studentsPositive": 3,
+    "employeesTested": 56,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "cmc",
+    "weekStart": "2021-08-02",
+    "studentsTested": 5,
+    "studentsPositive": 0,
+    "employeesTested": 42,
+    "employeesPositive": 3,
+    "reported": "historic"
+  },
+  {
+    "school": "cmc",
+    "weekStart": "2021-07-26",
+    "studentsTested": 7,
+    "studentsPositive": 0,
+    "employeesTested": 20,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "cmc",
+    "weekStart": "2021-07-19",
+    "studentsTested": 4,
+    "studentsPositive": 0,
+    "employeesTested": 15,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "cmc",
+    "weekStart": "2021-07-12",
+    "studentsTested": 6,
+    "studentsPositive": 0,
+    "employeesTested": 15,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "cmc",
+    "weekStart": "2021-07-05",
+    "studentsTested": 3,
+    "studentsPositive": 0,
+    "employeesTested": 10,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pitzer",
+    "weekStart": "2021-09-13",
+    "studentsTested": 961,
+    "studentsPositive": 0,
+    "employeesTested": 84,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pitzer",
+    "weekStart": "2021-09-06",
+    "studentsTested": 1063,
+    "studentsPositive": 0,
+    "employeesTested": 70,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pitzer",
+    "weekStart": "2021-08-30",
+    "studentsTested": 1123,
+    "studentsPositive": 3,
+    "employeesTested": 55,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pitzer",
+    "weekStart": "2021-08-23",
+    "studentsTested": 885,
+    "studentsPositive": 2,
+    "employeesTested": 51,
+    "employeesPositive": 1,
+    "reported": "historic"
+  },
+  {
+    "school": "pitzer",
+    "weekStart": "2021-08-16",
+    "studentsTested": 356,
+    "studentsPositive": 1,
+    "employeesTested": 47,
+    "employeesPositive": 0,
+    "reported": "historic"
+  },
+  {
+    "school": "pitzer",
+    "weekStart": "2021-08-09",
+    "studentsTested": 125,
+    "studentsPositive": 0,
+    "employeesTested": 43,
+    "employeesPositive": 0,
+    "reported": "historic"
   }
 ]

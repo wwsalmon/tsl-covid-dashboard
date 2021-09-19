@@ -1,9 +1,9 @@
 module.exports = {
-    mode: 'jit',
+    mode: "jit",
     purge: [
-        './**/*.html',
-        './**/*.tsx',
-        './**/*.ts',
+        "./**/*.html",
+        "./**/*.tsx",
+        "./**/*.ts",
     ],
     theme: {
         container: {
@@ -22,5 +22,7 @@ module.exports = {
         }
     },
     variants: {},
-    plugins: [],
-}
+    plugins: [
+        require("@tailwindcss/typography"),
+    ],
+};
