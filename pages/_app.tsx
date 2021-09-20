@@ -11,6 +11,10 @@ Router.events.on("routeChangeStart", (url, {shallow}) => {
 });
 Router.events.on("routeChangeComplete", (url, {shallow}) => {
     if (!shallow) NProgress.done();
+    // @ts-ignore
+    window.gtag('config', process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS, {
+        page_path: url,
+    });
 });
 Router.events.on("routeChangeError", () => NProgress.done());
 
