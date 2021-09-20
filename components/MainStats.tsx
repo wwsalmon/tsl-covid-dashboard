@@ -95,6 +95,7 @@ export default function MainStats({school, currentDate, setCurrentDate}: {school
                 {allSchools.filter(d => school ? d === school : true).map(school => {
                     const thisItem = currentItems.find(d => d.school === school);
                     const allPositives = thisItem ? (numberOrZero(thisItem.studentsPositive) + numberOrZero(thisItem.employeesPositive)) : 0;
+                    if (allPositives !== 0) return <></>;
                     const allTests = thisItem ? (numberOrZero(thisItem.studentsTested) + numberOrZero(thisItem.employeesTested)) : 0;
                     return (
                         <CaseDot case={{school: school, isNoReport: allTests === 0, isNoCases: allTests !== 0 && allPositives === 0}}/>
