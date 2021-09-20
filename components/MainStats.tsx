@@ -81,7 +81,7 @@ export default function MainStats({school, currentDate, setCurrentDate}: {school
 
     return (
         <>
-            <h1 className="font-serif text-6xl font-medium">+{totalPositive} cases</h1>
+            <h1 className="font-serif text-6xl font-medium">+{totalPositive} case{totalPositive !== 1 ? "s" : ""}</h1>
             <p className="mt-3 text-gray-500 text-xl">
                 {!school && "at the Claremont Colleges from "}{format(weekStartDate, "MMMM d")} - {format(weekEndDate, inSameMonth ? "d" : "MMMM d")}
             </p>
