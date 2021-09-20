@@ -1,5 +1,14 @@
 [
   {
+    "school": "hmc",
+    "weekStart": "2021-09-13",
+    "studentsTested": 870,
+    "studentsPositive": 0,
+    "employees": 61,
+    "employeesPositive": 1,
+    "reported": "2021-09-19"
+  },
+  {
     "school": "pomona",
     "weekStart": "2021-09-13",
     "studentsTested": 1658,
