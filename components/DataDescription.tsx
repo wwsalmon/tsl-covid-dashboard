@@ -15,7 +15,6 @@ export default function DataDescription({school}: {
             link: "https://www.pomona.edu/return-to-campus/testing",
             title: "Case Dashboard & Testing | Pomona College in Claremont, California - Pomona College",
             weeklyBasis: "Sunday-Monday",
-            reportingFrequency: "weekly on Friday"
         },
         hmc: {
             link: "https://www.hmc.edu/covid-19/dashboard/",
