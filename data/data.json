@@ -2,9 +2,9 @@
   {
     "school": "hmc",
     "weekStart": "2021-09-13",
-    "studentsTested": 870,
-    "studentsPositive": 0,
-    "employees": 61,
+    "studentsTested": 908,
+    "studentsPositive": 1,
+    "employees": 80,
     "employeesPositive": 1,
     "reported": "2021-09-19"
   },
