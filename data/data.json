@@ -1,5 +1,32 @@
 [
   {
+    "school": "cmc",
+    "weekStart": "2021-09-20",
+    "studentsTested": 1288,
+    "studentsPositive": 0,
+    "employees": 132,
+    "employeesPositive": 0,
+    "reported": "2021-09-24"
+  },
+  {
+    "school": "pitzer",
+    "weekStart": "2021-09-20",
+    "studentsTested": 873,
+    "studentsPositive": 0,
+    "employees": 65,
+    "employeesPositive": 0,
+    "reported": "2021-09-24"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-09-20",
+    "studentsTested": 1636,
+    "studentsPositive": 0,
+    "employees": 176,
+    "employeesPositive": 1,
+    "reported": "2021-09-26"
+  },
+  {
     "school": "hmc",
     "weekStart": "2021-09-13",
     "studentsTested": 908,
