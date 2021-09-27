@@ -1,5 +1,14 @@
 [
   {
+    "school": "hmc",
+    "weekStart": "2021-09-20",
+    "studentsTested": 882,
+    "studentsPositive": 0,
+    "employees": 48,
+    "employeesPositive": 0,
+    "reported": "2021-09-26"
+  },
+  {
     "school": "cmc",
     "weekStart": "2021-09-20",
     "studentsTested": 1288,
