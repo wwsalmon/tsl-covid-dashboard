@@ -1,12 +1,48 @@
 [
   {
+    "school": "scripps",
+    "weekStart": "2021-08-30",
+    "studentsTested": 66,
+    "studentsPositive": 1,
+    "employees": 174,
+    "employeesPositive": 0,
+    "reported": "2021-09-30"
+  },
+  {
+    "school": "scripps",
+    "weekStart": "2021-09-06",
+    "studentsTested": 290,
+    "studentsPositive": 2,
+    "employees": 252,
+    "employeesPositive": 0,
+    "reported": "2021-09-30"
+  },
+  {
+    "school": "scripps",
+    "weekStart": "2021-09-13",
+    "studentsTested": 450,
+    "studentsPositive": 0,
+    "employees": 240,
+    "employeesPositive": 1,
+    "reported": "2021-09-30"
+  },
+  {
+    "school": "scripps",
+    "weekStart": "2021-09-20",
+    "studentsTested": 654,
+    "studentsPositive": 0,
+    "employees": 339,
+    "employeesPositive": 1,
+    "reported": "2021-09-30"
+  },
+  {
     "school": "hmc",
     "weekStart": "2021-09-20",
-    "studentsTested": 882,
+    "studentsTested": 935,
     "studentsPositive": 0,
-    "employees": 48,
+    "employees": 70,
     "employeesPositive": 0,
-    "reported": "2021-09-26"
+    "reported": "2021-09-30"
   },
   {
     "school": "cmc",
@@ -20,20 +56,20 @@
   {
     "school": "pitzer",
     "weekStart": "2021-09-20",
-    "studentsTested": 873,
+    "studentsTested": 999,
     "studentsPositive": 0,
-    "employees": 65,
+    "employees": 83,
     "employeesPositive": 0,
-    "reported": "2021-09-24"
+    "reported": "2021-09-30"
   },
   {
     "school": "pomona",
     "weekStart": "2021-09-20",
-    "studentsTested": 1636,
+    "studentsTested": 1741,
     "studentsPositive": 0,
     "employees": 176,
     "employeesPositive": 1,
-    "reported": "2021-09-26"
+    "reported": "2021-09-30"
   },
   {
     "school": "hmc",
@@ -52,15 +88,6 @@
     "employees": 171,
     "employeesPositive": 0,
     "reported": "2021-09-19"
-  },
-  {
-    "school": "scripps",
-    "weekStart": "2021-09-06",
-    "studentsTested": 229,
-    "studentsPositive": 2,
-    "employees": 252,
-    "employeesPositive": 0,
-    "reported": "historic"
   },
   {
     "school": "hmc",
