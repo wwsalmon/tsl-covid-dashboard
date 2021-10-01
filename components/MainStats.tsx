@@ -129,7 +129,7 @@ export default function MainStats({school, currentDate, setCurrentDate}: {school
             />
             {school && (currentItems[0].reported !== "historic") && (
                 <p className="mt-8 text-gray-500">
-                    This week's data was reported by {getSchoolShortName(school)} on {format(addMinutes(new Date(currentItems[0].reported), new Date().getTimezoneOffset()), "MMMM d, yyyy")}
+                    This week's data was last updated on {format(addMinutes(new Date(currentItems[0].reported), new Date().getTimezoneOffset()), "MMMM d, yyyy")}
                 </p>
             )}
             <hr className="my-12"/>
