@@ -48,7 +48,7 @@ export default function Navbar() {
                     </div>
                     <H3 className="mb-2">By school</H3>
                     {allSchools.map(d => (
-                        <Button containerClassName="py-2 text-xl text-right" href={`/${d}`}>{getSchoolName(d)}</Button>
+                        <Button containerClassName="py-2 text-xl text-right" href={`/${d}`} key={d}>{getSchoolName(d)}</Button>
                     ))}
                     <H3 className="mt-8 mb-2">Other info</H3>
                     <Button containerClassName="py-2 text-xl" href="About">About this dashboard</Button>
