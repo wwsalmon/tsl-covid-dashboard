@@ -2,11 +2,11 @@
   {
     "school": "hmc",
     "weekStart": "2021-10-04",
-    "studentsTested": 858,
+    "studentsTested": 907,
     "studentsPositive": 0,
-    "employeesTested": 41,
+    "employeesTested": 58,
     "employeesPositive": 1,
-    "reported": "2021-10-10"
+    "reported": "2021-10-12"
   },
   {
     "school": "cmc",
@@ -20,20 +20,29 @@
   {
     "school": "pitzer",
     "weekStart": "2021-10-04",
-    "studentsTested": 996,
+    "studentsTested": 1176,
     "studentsPositive": 1,
-    "employeesTested": 67,
-    "employeesPositive": 0,
-    "reported": "2021-10-10"
+    "employeesTested": 70,
+    "employeesPositive": 1,
+    "reported": "2021-10-12"
   },
   {
     "school": "pomona",
     "weekStart": "2021-10-04",
-    "studentsTested": 1924,
+    "studentsTested": 2199,
     "studentsPositive": 7,
     "employeesTested": 178,
     "employeesPositive": 0,
-    "reported": "2021-10-10"
+    "reported": "2021-10-12"
+  },
+  {
+    "school": "scripps",
+    "weekStart": "2021-10-04",
+    "studentsTested": 803,
+    "studentsPositive": 0,
+    "employeesTested": 318,
+    "employeesPositive": 1,
+    "reported": "2021-10-12"
   },
   {
     "school": "scripps",
