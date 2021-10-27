@@ -29,11 +29,20 @@
   {
     "school": "pitzer",
     "weekStart": "2021-10-18",
-    "studentsTested": 302,
+    "studentsTested": 1018,
     "studentsPositive": 0,
-    "employeesTested": 36,
+    "employeesTested": 58,
     "employeesPositive": 0,
-    "reported": "2021-10-25"
+    "reported": "2021-10-27"
+  },
+  {
+    "school": "scripps",
+    "weekStart": "2021-10-18",
+    "studentsTested": 1041,
+    "studentsPositive": 0,
+    "employeesTested": 365,
+    "employeesPositive": 1,
+    "reported": "2021-10-27"
   },
   {
     "school": "hmc",
