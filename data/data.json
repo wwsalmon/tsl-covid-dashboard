@@ -36,6 +36,15 @@
     "reported": "2021-11-02"
   },
   {
+    "school": "scripps",
+    "weekStart": "2021-10-25",
+    "studentsTested": 1040,
+    "studentsPositive": 0,
+    "employeesTested": 364,
+    "employeesPositive": 1,
+    "reported": "2021-11-04"
+  },
+  {
     "school": "hmc",
     "weekStart": "2021-10-18",
     "studentsTested": 896,
