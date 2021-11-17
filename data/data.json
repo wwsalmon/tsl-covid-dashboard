@@ -57,7 +57,7 @@
     "school": "pomona",
     "weekStart": "2021-11-01",
     "studentsTested": 1941,
-    "studentsPositive": 10,
+    "studentsPositive": 0,
     "employeesTested": 154,
     "employeesPositive": 2,
     "reported": "2021-11-09"
