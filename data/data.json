@@ -1,5 +1,14 @@
 [
   {
+    "school": "scripps",
+    "weekStart": "2021-11-08",
+    "studentsTested": 1113,
+    "studentsPositive": 0,
+    "employeesTested": 393,
+    "employeesPositive": 0,
+    "reported": "2021-11-17"
+  },
+  {
     "school": "hmc",
     "weekStart": "2021-11-08",
     "studentsTested": 1037,
@@ -74,9 +83,9 @@
   {
     "school": "scripps",
     "weekStart": "2021-11-01",
-    "studentsTested": 1113,
-    "studentsPositive": 0,
-    "employeesTested": 393,
+    "studentsTested": 1086,
+    "studentsPositive": 1,
+    "employeesTested": 390,
     "employeesPositive": 0,
     "reported": "2021-11-17"
   },
