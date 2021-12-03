@@ -3,7 +3,7 @@ import ReactModal from "react-modal";
 import Navbar from "../components/Navbar";
 import NProgress from "nprogress";
 import "../styles/nprogress.css";
-import Router from "next/router";
+import Router, {useRouter} from "next/router";
 import Footer from "../components/Footer";
 
 Router.events.on("routeChangeStart", (url, {shallow}) => {
@@ -19,11 +19,17 @@ Router.events.on("routeChangeComplete", (url, {shallow}) => {
 Router.events.on("routeChangeError", () => NProgress.done());
 
 export default function App({Component, pageProps}) {
+    const router = useRouter();
+
     return (
         <div id="app-root">
-            <Navbar/>
+            {router.route !== "/print" && (
+                <Navbar/>
+            )}
             <Component {...pageProps} />
-            <Footer/>
+            {router.route !== "/print" && (
+                <Footer/>
+            )}
         </div>
     );
 }

@@ -13,7 +13,7 @@ import DataDescription from "./DataDescription";
 import Link from "next/link";
 import getSchoolShortName from "../utils/getSchoolShortName";
 
-const getCasesFromItems = (items: DataItem[]) => allSchools.reduce((a: CaseItem[], b): CaseItem[] => {
+export const getCasesFromItems = (items: DataItem[]) => allSchools.reduce((a: CaseItem[], b): CaseItem[] => {
     const thisItem = items.find(d => d.school === b);
     if (!thisItem) return a;
     const numStudentCases = numberOrZero(thisItem.studentsPositive);
