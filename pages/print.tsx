@@ -91,7 +91,7 @@ export default function Print({}: {}) {
 
                         return (
                             <div style={{width: 32, height: 32, marginRight: 12, borderRadius: 16, borderWidth: 2.5, borderColor: schoolColors[school]}} className={`opacity-50 ${allTests === 0 ? "border-dashed" : ""}`}>
-                                <p className="font-bold text-center w-full" style={{marginTop: 3, fontSize: 16, color: schoolColors[school]}}>
+                                <p className="font-bold text-center w-full" style={{marginTop: 2, fontSize: 16, color: schoolColors[school]}}>
                                     {allTests === 0 ? "N" : "0"}
                                 </p>
                             </div>
