@@ -1,5 +1,41 @@
 [
   {
+    "school": "hmc",
+    "weekStart": "2021-11-29",
+    "studentsTested": 1024,
+    "studentsPositive": 0,
+    "employeesTested": 59,
+    "employeesPositive": 0,
+    "reported": "2021-12-07"
+  },
+  {
+    "school": "cmc",
+    "weekStart": "2021-11-29",
+    "studentsTested": 1320,
+    "studentsPositive": 5,
+    "employeesTested": 126,
+    "employeesPositive": 1,
+    "reported": "2021-12-07"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-11-29",
+    "studentsTested": 1897,
+    "studentsPositive": 2,
+    "employeesTested": 135,
+    "employeesPositive": 0,
+    "reported": "2021-12-07"
+  },
+  {
+    "school": "pitzer",
+    "weekStart": "2021-11-29",
+    "studentsTested": 1309,
+    "studentsPositive": 0,
+    "employeesTested": 59,
+    "employeesPositive": 1,
+    "reported": "2021-12-07"
+  },
+  {
     "school": "scripps",
     "weekStart": "2021-11-22",
     "studentsTested": 492,
