@@ -1,5 +1,230 @@
 [
   {
+    "school": "hmc",
+    "weekStart": "2022-01-17",
+    "studentsTested": 1379,
+    "studentsPositive": 14,
+    "employeesTested": 132,
+    "employeesPositive": 6,
+    "reported": "2022-01-25"
+  },
+  {
+    "school": "hmc",
+    "weekStart": "2022-01-10",
+    "studentsTested": 251,
+    "studentsPositive": 4,
+    "employeesTested": 167,
+    "employeesPositive": 12,
+    "reported": "2022-01-25"
+  },
+  {
+    "school": "hmc",
+    "weekStart": "2022-01-03",
+    "studentsTested": 83,
+    "studentsPositive": 4,
+    "employeesTested": 124,
+    "employeesPositive": 7,
+    "reported": "2022-01-25"
+  },
+  {
+    "school": "hmc",
+    "weekStart": "2021-12-27",
+    "studentsTested": 34,
+    "studentsPositive": 1,
+    "employeesTested": 18,
+    "employeesPositive": 1,
+    "reported": "2022-01-25"
+  },
+  {
+    "school": "hmc",
+    "weekStart": "2021-12-20",
+    "studentsTested": 14,
+    "studentsPositive": 0,
+    "employeesTested": 24,
+    "employeesPositive": 2,
+    "reported": "2022-01-25"
+  },
+  {
+    "school": "hmc",
+    "weekStart": "2021-12-13",
+    "studentsTested": 686,
+    "studentsPositive": 1,
+    "employeesTested": 58,
+    "employeesPositive": 0,
+    "reported": "2022-01-25"
+  },
+  {
+    "school": "scripps",
+    "weekStart": "2022-01-17",
+    "studentsTested": 691,
+    "studentsPositive": 18,
+    "employeesTested": 274,
+    "employeesPositive": 9,
+    "reported": "2022-01-25"
+  },
+  {
+    "school": "scripps",
+    "weekStart": "2022-01-10",
+    "studentsTested": 481,
+    "studentsPositive": 15,
+    "employeesTested": 245,
+    "employeesPositive": 12,
+    "reported": "2022-01-25"
+  },
+  {
+    "school": "scripps",
+    "weekStart": "2021-12-10",
+    "studentsTested": 824,
+    "studentsPositive": 5,
+    "employeesTested": 321,
+    "employeesPositive": 1,
+    "reported": "2022-01-25"
+  },
+  {
+    "school": "cmc",
+    "weekStart": "2022-01-17",
+    "studentsTested": 933,
+    "studentsPositive": 29,
+    "employeesTested": 304,
+    "employeesPositive": 9,
+    "reported": "2022-01-25"
+  },
+  {
+    "school": "cmc",
+    "weekStart": "2022-01-10",
+    "studentsTested": 274,
+    "studentsPositive": 15,
+    "employeesTested": 336,
+    "employeesPositive": 22,
+    "reported": "2022-01-25"
+  },
+  {
+    "school": "cmc",
+    "weekStart": "2022-01-03",
+    "studentsTested": 119,
+    "studentsPositive": 9,
+    "employeesTested": 217,
+    "employeesPositive": 27,
+    "reported": "2022-01-25"
+  },
+  {
+    "school": "cmc",
+    "weekStart": "2021-12-27",
+    "studentsTested": 124,
+    "studentsPositive": 10,
+    "employeesTested": 47,
+    "employeesPositive": 3,
+    "reported": "2022-01-25"
+  },
+  {
+    "school": "cmc",
+    "weekStart": "2021-12-13",
+    "studentsTested": 971,
+    "studentsPositive": 10,
+    "employeesTested": 170,
+    "employeesPositive": 2,
+    "reported": "2022-01-25"
+  },
+  {
+    "school": "pitzer",
+    "weekStart": "2022-01-17",
+    "studentsTested": 1027,
+    "studentsPositive": 17,
+    "employeesTested": 158,
+    "employeesPositive": 3,
+    "reported": "2022-01-25"
+  },
+  {
+    "school": "pitzer",
+    "weekStart": "2022-01-10",
+    "studentsTested": 328,
+    "studentsPositive": 5,
+    "employeesTested": 142,
+    "employeesPositive": 5,
+    "reported": "2022-01-25"
+  },
+  {
+    "school": "pitzer",
+    "weekStart": "2022-01-03",
+    "studentsTested": 111,
+    "studentsPositive": 6,
+    "employeesTested": 100,
+    "employeesPositive": 8,
+    "reported": "2022-01-25"
+  },
+  {
+    "school": "pitzer",
+    "weekStart": "2021-12-27",
+    "studentsTested": 73,
+    "studentsPositive": 7,
+    "employeesTested": 0,
+    "employeesPositive": 0,
+    "reported": "2022-01-25"
+  },
+  {
+    "school": "pitzer",
+    "weekStart": "2021-12-20",
+    "studentsTested": 25,
+    "studentsPositive": 2,
+    "employeesTested": 34,
+    "employeesPositive": 0,
+    "reported": "2022-01-25"
+  },
+  {
+    "school": "pitzer",
+    "weekStart": "2021-12-13",
+    "studentsTested": 932,
+    "studentsPositive": 1,
+    "employeesTested": 133,
+    "employeesPositive": 1,
+    "reported": "2022-01-25"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2022-01-17",
+    "studentsTested": 1492,
+    "studentsPositive": 39,
+    "employeesTested": 396,
+    "employeesPositive": 14,
+    "reported": "2022-01-25"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2022-01-10",
+    "studentsTested": 366,
+    "studentsPositive": 4,
+    "employeesTested": 450,
+    "employeesPositive": 52,
+    "reported": "2022-01-25"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2022-01-03",
+    "studentsTested": 199,
+    "studentsPositive": 4,
+    "employeesTested": 174,
+    "employeesPositive": 27,
+    "reported": "2022-01-25"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-12-20",
+    "studentsTested": 10,
+    "studentsPositive": 1,
+    "employeesTested": 112,
+    "employeesPositive": 1,
+    "reported": "2022-01-25"
+  },
+  {
+    "school": "pomona",
+    "weekStart": "2021-12-13",
+    "studentsTested": 1624,
+    "studentsPositive": 4,
+    "employeesTested": 143,
+    "employeesPositive": 0,
+    "reported": "2022-01-25"
+  },
+  {
     "school": "scripps",
     "weekStart": "2021-12-06",
     "studentsTested": 1204,
