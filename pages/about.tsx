@@ -14,7 +14,10 @@ export default function About({}: {}) {
             <div className="prose mt-6" style={{fontSize: 18}}>
                 <p><i>The Student Life</i>'s 5C COVID dashboard, accessible at covid.tsl.news, aggregates COVID testing data from each of the 5C schools and displays them in one easy-to-read dashboard.</p>
                 <p>The dashboard first launched on September 19, 2021, developed by TSL News Staff Writer <a href="https://www.samsonzhang.com">Samson Zhang (PO '25)</a> and maintained by TSL staff.</p>
-                <p>Data displayed on the dashboard is manually updated every Sunday for the previous week starting on Monday. Data is sourced from reports published by each of the 5C schools. The specifics for each school are detailed in the sections below.</p>
+                <p>Data displayed on the dashboard is manually updated every Tuesday for the previous week starting on Monday. Data is sourced from reports published by each of the 5C schools. The specifics for each school are detailed in the sections below.</p>
+                <p>TSL also maintains a tool that takes a screenshot of every school's COVID dashboard every day at 5 AM UTC (9 PM PST the previous day). You can find an archive of all screenshots <a
+                    href="https://github.com/wwsalmon/tsl-covid-screenshotter"
+                >here</a>.</p>
                 <p>The dashboard's code is <a href="https://github.com/wwsalmon/tsl-covid-dashboard">open-source on GitHub.</a></p>
                 <hr/>
                 <h3>Data sourcing</h3>
