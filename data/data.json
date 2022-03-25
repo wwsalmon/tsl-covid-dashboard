@@ -73,12 +73,21 @@
   },
   {
     "school": "scripps",
-    "weekStart": "2022-03-07",
+    "weekStart": "2022-03-14",
     "studentsTested": 82,
     "studentsPositive": 3,
     "employeesTested": 199,
     "employeesPositive": 0,
-    "reported": "2022-03-23"
+    "reported": "2022-03-24"
+  },
+  {
+    "school": "scripps",
+    "weekStart": "2022-03-07",
+    "studentsTested": 954,
+    "studentsPositive": 2,
+    "employeesTested": 329,
+    "employeesPositive": 0,
+    "reported": "2022-03-24"
   },
   {
     "school": "cmc",
