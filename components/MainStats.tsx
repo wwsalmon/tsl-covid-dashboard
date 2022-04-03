@@ -62,10 +62,9 @@ export default function MainStats({school, currentDate, setCurrentDate}: {school
     const allCases = getCasesFromItems(currentItems);
 
     const totalPositive = allCases.length;
-    const studentsPositive = allCases.filter(d => !d.isEmployee).length;
-    const employeesPositive = allCases.filter(d => d.isEmployee).length;
 
-    const lastWeekDate = format(addMinutes(subDays(new Date(currentDate), 7), new Date().getTimezoneOffset()), "yyyy-MM-dd");
+    const lastWeekDateRaw = subDays(new Date(currentDate), 7);
+    const lastWeekDate = format(addMinutes(lastWeekDateRaw, lastWeekDateRaw.getTimezoneOffset()), "yyyy-MM-dd");
     let lastWeekItems = data.filter(d => d.weekStart === lastWeekDate) as DataItem[];
     if (school) lastWeekItems = lastWeekItems.filter(d => d.school === school);
     const lastWeekCases = getCasesFromItems(lastWeekItems);
