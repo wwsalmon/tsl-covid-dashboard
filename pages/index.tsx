@@ -26,14 +26,15 @@ export default function Home() {
             <div className="sm:flex">
                 <div className="flex-shrink-1 min-w-0 sm:pr-8">
                     <div className="bg-tsl p-4 text-white rounded-md mb-12">
-                        <h2 className="font-bold">Note about week of April 4 surge</h2>
+                        <h2 className="font-bold">Note about Pomona dashboard inconsistency</h2>
                         <p className="mt-4">
-                            From April 4-6, the 5Cs experienced a <b>surge of over 190 positive cases.</b>
+                            At 10:30 PM PT on April 19, Pomona's COVID dashboard showed that there were 70 positive student cases in the week of April 10, 92 student cases in the week of April 3 and 43 student cases in the week of March 27, as <a
+                            href="https://github.com/wwsalmon/tsl-covid-screenshotter/blob/master/scs/2022-04-20-pomona.png"
+                            className="underline"
+                        >recorded by TSL's daily COVID dashboard screenshotter.</a>
                         </p>
                         <p className="mt-4">
-                            This dashboard is updated every Tuesday night, when all school dashboards report testing data for the week. See <a href="https://tsl.news/covid-cases-ten-percent/" className="underline">this tsl.news article about the surge</a> and follow @TSLNews on <a
-                            href="https://www.instagram.com/tslnews/" className="underline"
-                        >Instagram</a> and <a href="https://twitter.com/tslnews" className="underline">Twitter</a> for the latest info.
+                            Since then, the dashboard has changed case counts to show 40, 78 and 41 cases in the weeks of April 10, April 3 and March 27 respectively. TSL has reached out to X for an explanation about these changes and will update the TSL COVID dashboard once a response is received.
                         </p>
                     </div>
                     <MainStats currentDate={currentDate} setCurrentDate={setCurrentDate}/>
