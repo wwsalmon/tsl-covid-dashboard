@@ -34,7 +34,7 @@ export default function Home() {
                         >recorded by TSL's daily COVID dashboard screenshotter.</a>
                         </p>
                         <p className="mt-4">
-                            Since then, the dashboard has changed case counts to show 40, 78 and 41 cases in the weeks of April 10, April 3 and March 27 respectively. TSL has reached out to X for an explanation about these changes and will update the TSL COVID dashboard once a response is received.
+                            Since then, the dashboard has changed case counts to show 40, 78 and 41 cases in the weeks of April 10, April 3 and March 27 respectively. TSL has reached out to Pomona College for an explanation about these changes and will update the TSL COVID dashboard once a response is received.
                         </p>
                     </div>
                     <MainStats currentDate={currentDate} setCurrentDate={setCurrentDate}/>
