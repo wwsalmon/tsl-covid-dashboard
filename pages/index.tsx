@@ -26,16 +26,11 @@ export default function Home() {
             <div className="sm:flex">
                 <div className="flex-shrink-1 min-w-0 sm:pr-8">
                     <div className="bg-tsl p-4 text-white rounded-md mb-12">
-                        <h2 className="font-bold">Note about Pomona dashboard inconsistency</h2>
+                        <h2 className="font-bold">Note about dashboard inconsistencies</h2>
                         <p className="mt-4">
-                            At 10:30 PM PT on April 19, Pomona's COVID dashboard showed that there were 70 positive student cases in the week of April 10, 92 student cases in the week of April 3 and 43 student cases in the week of March 27, as <a
-                            href="https://github.com/wwsalmon/tsl-covid-screenshotter/blob/master/scs/2022-04-20-pomona.png"
-                            className="underline"
-                        >recorded by TSL's daily COVID dashboard screenshotter.</a>
+                            During the COVID surge in April, Student Health Services over-counted COVID cases across the 5Cs, TCCS confirmed on April 27.
                         </p>
-                        <p className="mt-4">
-                            Since then, the dashboard has changed case counts to show 40, 78 and 41 cases in the weeks of April 10, April 3 and March 27 respectively. TSL has reached out to Pomona College for an explanation about these changes and will update the TSL COVID dashboard once a response is received.
-                        </p>
+                        <p className="mt-4">Read TSL's <a href="https://tsl.news/shs-overcounted-covid-cases/" className="underline">coverage of the over-counting here</a>.</p>
                     </div>
                     <MainStats currentDate={currentDate} setCurrentDate={setCurrentDate}/>
                 </div>
